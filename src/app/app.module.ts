@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
   imports: [
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAK7y39CILuS-5jYUzhQmmwz24z8UaFFpQ'
+      apiKey: ''
     })
   ],
   providers: [],
