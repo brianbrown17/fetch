@@ -1,19 +1,16 @@
 import { NgModule } from '@angular/core';
-import { AgmCoreModule } from '@agm/core';
+import { GoogleMapsModule } from '@angular/google-maps'
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
-  imports: [
-    AppRoutingModule,
-    AgmCoreModule.forRoot({
-      apiKey: ''
-    })
-  ],
+  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule],
+  exports: [GoogleMapsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
